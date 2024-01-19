@@ -1,0 +1,17 @@
+syntax = "proto3";
+package pax.ugdvesting;
+
+import "amino/amino.proto";
+import "gogoproto/gogo.proto";
+import "pax/ugdvesting/params.proto";
+
+option go_package = "pax/x/ugdvesting/types";
+
+// GenesisState defines the ugdvesting module's genesis state.
+message GenesisState {
+  // params defines all the parameters of the module.
+  Params params = 1 [
+    (gogoproto.nullable) = false,
+    (amino.dont_omitempty) = true
+  ];
+}

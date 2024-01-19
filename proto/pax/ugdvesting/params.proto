@@ -1,0 +1,15 @@
+syntax = "proto3";
+package pax.ugdvesting;
+
+import "amino/amino.proto";
+import "gogoproto/gogo.proto";
+
+option go_package = "pax/x/ugdvesting/types";
+
+// Params defines the parameters for the module.
+message Params {
+  option (amino.name) = "pax/x/ugdvesting/Params";
+  option (gogoproto.equal) = true;
+
+  
+}
