@@ -1,4 +1,4 @@
-module pax
+module github.com/unigrid-project/ugdvesting-test
 
 go 1.21
 
