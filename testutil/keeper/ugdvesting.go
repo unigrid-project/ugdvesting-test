@@ -17,8 +17,8 @@ import (
 	govtypes "github.com/cosmos/cosmos-sdk/x/gov/types"
 	"github.com/stretchr/testify/require"
 
-	"pax/x/ugdvesting/keeper"
-	"pax/x/ugdvesting/types"
+	"github.com/unigrid-project/ugdvesting-test/x/ugdvesting/keeper"
+	"github.com/unigrid-project/ugdvesting-test/x/ugdvesting/types"
 )
 
 func UgdvestingKeeper(t testing.TB) (keeper.Keeper, sdk.Context) {

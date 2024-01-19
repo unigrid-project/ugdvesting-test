@@ -8,9 +8,9 @@ import (
 	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
 	"github.com/cosmos/cosmos-sdk/x/simulation"
 
-	"pax/testutil/sample"
-	ugdvestingsimulation "pax/x/ugdvesting/simulation"
-	"pax/x/ugdvesting/types"
+	"github.com/unigrid-project/ugdvesting-test/testutil/sample"
+	ugdvestingsimulation "github.com/unigrid-project/ugdvesting-test/x/ugdvesting/simulation"
+	"github.com/unigrid-project/ugdvesting-test/x/ugdvesting/types"
 )
 
 // avoid unused import issue

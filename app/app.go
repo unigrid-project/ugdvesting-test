@@ -53,11 +53,11 @@ import (
 	ibctransferkeeper "github.com/cosmos/ibc-go/v8/modules/apps/transfer/keeper"
 	ibckeeper "github.com/cosmos/ibc-go/v8/modules/core/keeper"
 
-	paxmodulekeeper "pax/x/pax/keeper"
-	ugdvestingmodulekeeper "pax/x/ugdvesting/keeper"
+	ugdvestingmodulekeeper "github.com/unigrid-project/ugdvesting-test/x/ugdvesting/keeper"
+
 	// this line is used by starport scaffolding # stargate/app/moduleImport
 
-	"pax/docs"
+	"github.com/unigrid-project/ugdvesting-test/docs"
 )
 
 const (
@@ -117,7 +117,6 @@ type App struct {
 	ScopedICAControllerKeeper capabilitykeeper.ScopedKeeper
 	ScopedICAHostKeeper       capabilitykeeper.ScopedKeeper
 
-	PaxKeeper        paxmodulekeeper.Keeper
 	UgdvestingKeeper ugdvestingmodulekeeper.Keeper
 	// this line is used by starport scaffolding # stargate/app/keeperDeclaration
 
@@ -256,7 +255,6 @@ func New(
 		&app.GroupKeeper,
 		&app.ConsensusParamsKeeper,
 		&app.CircuitBreakerKeeper,
-		&app.PaxKeeper,
 		&app.UgdvestingKeeper,
 		// this line is used by starport scaffolding # stargate/app/keeperDefinition
 	); err != nil {

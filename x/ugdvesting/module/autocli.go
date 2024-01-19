@@ -3,7 +3,7 @@ package ugdvesting
 import (
 	autocliv1 "cosmossdk.io/api/cosmos/autocli/v1"
 
-	modulev1 "pax/api/pax/ugdvesting"
+	modulev1 "github.com/unigrid-project/ugdvesting-test/api/pax/ugdvesting"
 )
 
 // AutoCLIOptions implements the autocli.HasAutoCLIConfig interface.

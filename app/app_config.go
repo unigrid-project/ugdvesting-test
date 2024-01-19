@@ -71,12 +71,9 @@ import (
 	ibcexported "github.com/cosmos/ibc-go/v8/modules/core/exported"
 	"google.golang.org/protobuf/types/known/durationpb"
 
-	paxmodulev1 "pax/api/pax/pax/module"
-	ugdvestingmodulev1 "pax/api/pax/ugdvesting/module"
-	_ "pax/x/pax/module" // import for side-effects
-	paxmoduletypes "pax/x/pax/types"
-	_ "pax/x/ugdvesting/module" // import for side-effects
-	ugdvestingmoduletypes "pax/x/ugdvesting/types"
+	ugdvestingmodulev1 "github.com/unigrid-project/ugdvesting-test/api/pax/ugdvesting/module"
+	_ "github.com/unigrid-project/ugdvesting-test/x/ugdvesting/module" // import for side-effects
+	ugdvestingmoduletypes "github.com/unigrid-project/ugdvesting-test/x/ugdvesting/types"
 	// this line is used by starport scaffolding # stargate/app/moduleImport
 )
 
@@ -114,7 +111,6 @@ var (
 		consensusparamtypes.ModuleName,
 		circuittypes.ModuleName,
 		// chain modules
-		paxmoduletypes.ModuleName,
 		ugdvestingmoduletypes.ModuleName,
 		// this line is used by starport scaffolding # stargate/app/initGenesis
 	}
@@ -140,7 +136,6 @@ var (
 		icatypes.ModuleName,
 		ibcfeetypes.ModuleName,
 		// chain modules
-		paxmoduletypes.ModuleName,
 		ugdvestingmoduletypes.ModuleName,
 		// this line is used by starport scaffolding # stargate/app/beginBlockers
 	}
@@ -160,7 +155,6 @@ var (
 		icatypes.ModuleName,
 		ibcfeetypes.ModuleName,
 		// chain modules
-		paxmoduletypes.ModuleName,
 		ugdvestingmoduletypes.ModuleName,
 		// this line is used by starport scaffolding # stargate/app/endBlockers
 	}
@@ -310,10 +304,6 @@ var (
 			{
 				Name:   circuittypes.ModuleName,
 				Config: appconfig.WrapAny(&circuitmodulev1.Module{}),
-			},
-			{
-				Name:   paxmoduletypes.ModuleName,
-				Config: appconfig.WrapAny(&paxmodulev1.Module{}),
 			},
 			{
 				Name:   ugdvestingmoduletypes.ModuleName,

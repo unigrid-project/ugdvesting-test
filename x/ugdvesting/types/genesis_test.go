@@ -4,7 +4,7 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/require"
-	"pax/x/ugdvesting/types"
+	"github.com/unigrid-project/ugdvesting-test/x/ugdvesting/types"
 )
 
 func TestGenesisState_Validate(t *testing.T) {

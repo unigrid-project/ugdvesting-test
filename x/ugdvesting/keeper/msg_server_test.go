@@ -6,9 +6,9 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	keepertest "pax/testutil/keeper"
-	"pax/x/ugdvesting/keeper"
-	"pax/x/ugdvesting/types"
+	keepertest "github.com/unigrid-project/ugdvesting-test/testutil/keeper"
+	"github.com/unigrid-project/ugdvesting-test/x/ugdvesting/keeper"
+	"github.com/unigrid-project/ugdvesting-test/x/ugdvesting/types"
 )
 
 func setupMsgServer(t testing.TB) (keeper.Keeper, types.MsgServer, context.Context) {

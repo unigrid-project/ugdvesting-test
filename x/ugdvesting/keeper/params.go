@@ -5,7 +5,7 @@ import (
 
 	"github.com/cosmos/cosmos-sdk/runtime"
 
-	"pax/x/ugdvesting/types"
+	"github.com/unigrid-project/ugdvesting-test/x/ugdvesting/types"
 )
 
 // GetParams get all parameters as types.Params

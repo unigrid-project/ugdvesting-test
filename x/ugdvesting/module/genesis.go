@@ -3,8 +3,8 @@ package ugdvesting
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"pax/x/ugdvesting/keeper"
-	"pax/x/ugdvesting/types"
+	"github.com/unigrid-project/ugdvesting-test/x/ugdvesting/keeper"
+	"github.com/unigrid-project/ugdvesting-test/x/ugdvesting/types"
 )
 
 // InitGenesis initializes the module's state from a provided genesis state.

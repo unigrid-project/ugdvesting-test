@@ -1,7 +1,7 @@
 package keeper
 
 import (
-	"pax/x/ugdvesting/types"
+	"github.com/unigrid-project/ugdvesting-test/x/ugdvesting/types"
 )
 
 type msgServer struct {

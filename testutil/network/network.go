@@ -7,7 +7,7 @@ import (
 	"github.com/cosmos/cosmos-sdk/testutil/network"
 	"github.com/stretchr/testify/require"
 
-	"pax/app"
+	"github.com/unigrid-project/ugdvesting-test/app"
 )
 
 type (

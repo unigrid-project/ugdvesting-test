@@ -5,8 +5,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	keepertest "pax/testutil/keeper"
-	"pax/x/ugdvesting/types"
+	keepertest "github.com/unigrid-project/ugdvesting-test/testutil/keeper"
+	"github.com/unigrid-project/ugdvesting-test/x/ugdvesting/types"
 )
 
 func TestParamsQuery(t *testing.T) {

@@ -20,9 +20,9 @@ import (
 
 	// this line is used by starport scaffolding # 1
 
-	modulev1 "pax/api/pax/ugdvesting/module"
-	"pax/x/ugdvesting/keeper"
-	"pax/x/ugdvesting/types"
+	modulev1 "github.com/unigrid-project/ugdvesting-test/api/pax/ugdvesting/module"
+	"github.com/unigrid-project/ugdvesting-test/x/ugdvesting/keeper"
+	"github.com/unigrid-project/ugdvesting-test/x/ugdvesting/types"
 )
 
 var (

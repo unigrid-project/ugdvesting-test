@@ -4,10 +4,10 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/require"
-	keepertest "pax/testutil/keeper"
-	"pax/testutil/nullify"
-	"pax/x/ugdvesting/module"
-	"pax/x/ugdvesting/types"
+	keepertest "github.com/unigrid-project/ugdvesting-test/testutil/keeper"
+	"github.com/unigrid-project/ugdvesting-test/testutil/nullify"
+	ugdvesting "github.com/unigrid-project/ugdvesting-test/x/ugdvesting/module"
+	"github.com/unigrid-project/ugdvesting-test/x/ugdvesting/types"
 )
 
 func TestGenesis(t *testing.T) {
